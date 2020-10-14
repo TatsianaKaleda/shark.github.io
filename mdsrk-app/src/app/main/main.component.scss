@@ -1,0 +1,24 @@
+@import '../../assets/styles/main/variables.scss';
+@import '../../assets/styles/main/colors.scss';
+
+banner,
+dinner,
+menu,
+about,
+eco,
+reviews {
+  position: relative;
+}
+
+banner,
+menu,
+eco {
+  display: block;
+}
+
+menu,
+eco {
+  margin: -1px 0 0;
+  padding: 0;
+  background: $bgColor;
+}

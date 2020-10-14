@@ -1,0 +1,120 @@
+@import '../../../assets/styles/main/variables.scss';
+@import '../../../assets/styles/main/colors.scss';
+
+.slide {
+  &-position {
+    position: relative;
+    margin: 0 15px;
+    max-width: 270px;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(167, 167, 167, 0.26);
+    border-radius: 5px;
+    background: $whiteColor;
+    overflow: hidden;
+  }
+
+  &-labels {
+    position: absolute;
+    top: 0;
+
+    &-item {
+      display: table;
+      border-radius: 5px;
+      padding: 4px 14px;
+      color: $whiteColor;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &-content {
+    padding: 16px;
+  }
+
+  &-img {
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-categories {
+    margin-bottom: 5px;
+
+    &-item {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      color: $categoryColor;
+
+      &:first-child {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &-name {
+    margin: 0;
+    padding-bottom: 19px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+
+    &-weight,
+    &-price {
+      margin: 0;
+    }
+  }
+
+  &-controls {
+    display: flex;
+    justify-content: space-between;
+
+    &-count {
+      display: flex;
+      align-items: center;
+
+      &-value {
+        margin: 0;
+        font-size: 24px;
+        line-height: 29px;
+        color: $textColor;
+      }
+
+      & .count-btn {
+        padding: 0 4px;
+        width: auto;
+        min-width: auto;
+        background: none;
+        color: $btnColor;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 41px;
+      }
+    }
+
+    &-add {
+      color: $whiteColor;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      background: $btnColor;
+      min-height: 35px;
+      height: 35px;
+    }
+
+    &-not-available {
+      margin: 8px auto 0;
+      color: $warningColor;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

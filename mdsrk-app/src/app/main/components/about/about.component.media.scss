@@ -1,0 +1,28 @@
+@import '../../../../assets/styles/main/variables.scss';
+@import '../../../../assets/styles/main/colors.scss';
+
+@media screen and (max-width: 1200px) {
+  .mdsrk-about {
+    display: block;
+
+    &-content {
+      margin: 0 auto;
+      padding: 0 10px 60px;
+
+      &-title,
+      &-description {
+        text-align: center;
+      }
+
+      &-more {
+        margin: 0 140px;
+      }
+    }
+
+    &-img {
+      display: block;
+      width: 52%;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<section class="mdsrk-eco">
+  <h2 class="mdsrk-eco-title">
+    эко-продукты от «шанти лавка»
+  </h2>
+
+  <div class="mdsrk-eco-galery">
+    <slide
+      class="mdsrk-eco-galery-item"
+      *ngFor="let slide of slides"
+      [slide]="slide">
+    </slide>
+  </div>
+
+  <div class="mdsrk-eco-btn">
+    <button mat-button
+            class="mdsrk-eco-btn-more">
+      Посмотреть все
+    </button>
+  </div>
+</section>
+
+<div class="mdsrk-eco-wave">
+</div>

@@ -1,0 +1,143 @@
+<section class="mdsrk-navbar">
+  <div class="mdsrk-navbar-container">
+    <div class="mdsrk-navbar-container-logo">
+    </div>
+
+    <div class="mdsrk-navbar-container-nav">
+      <button mat-button
+              class="mdsrk-navbar-container-nav-item"
+              [matMenuTriggerFor]="menu">
+        Меню
+        <span class="mdsrk-navbar-container-nav-item-icon">
+        </span>
+      </button>
+
+      <mat-menu #menu="matMenu"
+                yPosition="below">
+        <button mat-menu-item
+                *ngFor="let menuItem of menuItems"
+                [class._active]="menuItem.active">
+          {{menuItem.name}}
+        </button>
+      </mat-menu>
+
+      <button mat-button
+              class="mdsrk-navbar-container-nav-item"
+              [matMenuTriggerFor]="shops">
+        Магазин
+        <span class="mdsrk-navbar-container-nav-item-icon">
+        </span>
+      </button>
+
+      <mat-menu #shops="matMenu"
+                yPosition="below">
+        <button mat-menu-item
+                *ngFor="let menuItem of menuItems"
+                [class._active]="menuItem.active">
+          {{menuItem.name}}
+        </button>
+      </mat-menu>
+
+      <button mat-button
+              class="mdsrk-navbar-container-nav-item">
+        Подписка
+      </button>
+
+      <button mat-button
+              class="mdsrk-navbar-container-nav-item">
+        Доставка
+      </button>
+
+      <button mat-button
+              class="mdsrk-navbar-container-nav-item">
+        партнерам
+      </button>
+
+      <button mat-button
+              class="mdsrk-navbar-container-nav-item">
+        Контакты
+      </button>
+    </div>
+
+    <div class="mdsrk-navbar-container-mobile">
+      <button mat-button
+              *ngIf="!showMobileMenu"
+              class="mdsrk-navbar-container-mobile-open"
+              (click)="toggleMobileMenu()">
+      </button>
+
+      <button mat-button
+              *ngIf="showMobileMenu"
+              class="mdsrk-navbar-container-mobile-close"
+              (click)="toggleMobileMenu()">
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="mdsrk-navbar-mobile"
+     *ngIf="showMobileMenu">
+  <div class="mdsrk-navbar-mobile-menu">
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Меню
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <button mat-menu-item
+                *ngFor="let menuItem of menuItems"
+                [class._active]="menuItem.active">
+          {{menuItem.name}}
+        </button>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <hr>
+
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Магазин
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <button mat-menu-item
+                *ngFor="let menuItem of menuItems"
+                [class._active]="menuItem.active">
+          {{menuItem.name}}
+        </button>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <hr>
+
+    <button mat-button
+            class="mdsrk-navbar-container-nav-item">
+      Подписка
+    </button>
+
+    <hr>
+
+    <button mat-button
+            class="mdsrk-navbar-container-nav-item">
+      Доставка
+    </button>
+
+    <hr>
+
+    <button mat-button
+            class="mdsrk-navbar-container-nav-item">
+      партнерам
+    </button>
+
+    <hr>
+
+    <button mat-button
+            class="mdsrk-navbar-container-nav-item">
+      Контакты
+    </button>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+@import '../../../../assets/styles/main/variables.scss';
+@import '../../../../assets/styles/main/colors.scss';
+
+.mdsrk-reviews {
+  max-width: $content-width-desktop;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 38px;
+  height: 490px;
+
+  &-title {
+    color: $textColor;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-galery {
+    margin-bottom: 53px;
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+
+    &-write {
+      margin-right: 16px;
+      padding: 18px 18px 16px 31px;
+      border: none;
+      background: $btnColor;
+      color: $whiteColor;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    &-all {
+      padding: 18px 17px 16px 32px;
+      background: $whiteColor;
+      color: $textColor;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      box-sizing: border-box;
+      border: 2px solid #F4A17B;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}

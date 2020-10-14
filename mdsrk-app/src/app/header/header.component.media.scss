@@ -1,0 +1,27 @@
+@import '../../assets/styles/main/variables.scss';
+
+@media screen and (max-width: 470px) {
+  .mdsrk-header {
+    &-info {
+      &-phone {
+        font-size: 10px;
+        line-height: 12px;
+      }
+
+      &-icons {
+        &-instagram {
+          margin-right: 30px;
+        }
+
+        &-user {
+          &-search,
+          &-account,
+          &-basket {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+}

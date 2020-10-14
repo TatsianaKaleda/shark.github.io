@@ -1,0 +1,37 @@
+<section class="mdsrk-dinner">
+  <h2 class="mdsrk-dinner-title">
+    Обеды
+  </h2>
+
+  <p class="mdsrk-dinner-subtitle">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean euismod bibendum laoreet.
+  </p>
+
+  <div class="mdsrk-dinner-days">
+    <button mat-button
+            *ngFor="let day of weekDays"
+            [class._active]="day.active"
+            class="mdsrk-dinner-days-item">
+      {{day.name}}
+    </button>
+  </div>
+
+  <div class="carousel-container">
+    <ngx-slick-carousel class="carousel"
+                        #slickModal="slick-carousel"
+                        [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <slide
+          [slide]="slide">
+        </slide>
+      </div>
+    </ngx-slick-carousel>
+
+    <button type="button" class="slick-prev">Previous</button>
+    <button type="button" class="slick-next">Next</button>
+  </div>
+</section>
+
+<div class="mdsrk-dinner-wave">
+</div>

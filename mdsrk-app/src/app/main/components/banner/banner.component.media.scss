@@ -1,0 +1,200 @@
+@import '../../../../assets/styles/main/variables.scss';
+@import '../../../../assets/styles/main/colors.scss';
+
+@media screen and (max-width: 1200px) {
+  .mdsrk-banner {
+
+    &-bg {
+      background-position-x: -380px;
+    }
+
+    &-content {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .mdsrk-banner {
+
+    &-bg {
+      background-position-x: -491px;
+    }
+
+    &-content {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .mdsrk-banner {
+
+    &-bg {
+      background-position-x: -559px;
+    }
+
+    &-content {
+      width: 350px;
+
+      &-more {
+          padding: 7px 46px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .mdsrk-banner {
+    padding-top: 160px;
+
+    &-bg {
+      background-position-x: -570px;
+    }
+
+    &-content {
+      width: 340px;
+
+      &-title {
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      &-description,
+      &-more {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mdsrk-banner {
+    padding-top: 140px;
+
+    &-bg {
+      background-position-x: -564px;
+      background-size: cover;
+    }
+
+    &-content {
+      width: 270px;
+
+      &-title {
+        font-size: 36px;
+        line-height: 45px;
+      }
+
+      &-description,
+      &-more {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mdsrk-banner {
+    padding-top: 120px;
+
+    &-bg {
+      background-position-x: -609px;
+      background-size: cover;
+    }
+
+    &-content {
+      width: 232px;
+
+      &-title {
+        font-size: 32px;
+        line-height: 41px;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .mdsrk-banner {
+    padding-top: 100px;
+
+    &-bg {
+      background-position-x: -629px;
+    }
+
+    &-content {
+      width: 200px;
+
+      &-title {
+        font-size: 26px;
+        line-height: 36px;
+      }
+
+      &-more {
+        padding: 2px 46px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .mdsrk-banner {
+    padding-top: 80px;
+
+    &-bg {
+      background-position-x: -666px;
+    }
+
+    &-content {
+      width: 180px;
+
+      &-title {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .mdsrk-banner {
+    padding-top: 115px;
+
+    &-bg {
+      background: url("../../../../assets/images/mobile.jpg") no-repeat center;
+      background-size: contain;
+      background-position-y: top;
+    }
+
+    &-content {
+      width: 250px;
+
+      &-title {
+        font-size: 26px;
+        line-height: 28px;
+      }
+
+      &-description,
+      &-more {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mdsrk-banner {
+    padding-top: 52px;
+
+    &-content {
+
+      &-description {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+
+

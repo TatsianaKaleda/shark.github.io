@@ -1,0 +1,68 @@
+@import '../../../../assets/styles/main/variables';
+@import '../../../../assets/styles/main/colors';
+
+.mdsrk-menu {
+  max-width: $content-width-desktop;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  background: $bgColor;
+
+  &-title {
+    color: $textColor;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &-subtitle {
+    margin: 0 auto 52px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 373px;
+    text-align: center;
+  }
+
+  &-category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    &-item {
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      font-weight: 400;
+      line-height: 19px;
+      color: $liteTextColor;
+      cursor: pointer;
+
+      &._active {
+        color: $blackColor;
+      }
+    }
+  }
+
+  &-wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 78px;
+    background: url("../../../../assets/images/wave3.png") no-repeat center;
+  }
+
+  & .slide {
+    height: 430px;
+    margin-bottom: 42px;
+
+    & slide {
+      display: block;
+      height: 100%;
+    }
+  }
+}

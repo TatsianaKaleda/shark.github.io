@@ -1,0 +1,60 @@
+@import '../../assets/styles/main/variables.scss';
+
+.mdsrk-header {
+  max-width: $content-width-desktop;
+  width: 100%;
+  margin: 0 auto;
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 8px;
+
+    &-phone {
+      padding: 19px 20px 0 15px;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 500;
+    }
+
+    &-icons {
+      display: flex;
+      align-items: center;
+
+      &-instagram {
+        background: url("../../assets/images/insta.svg") no-repeat center;
+        height: 19px;
+        width: 19px;
+        margin-right: 36px;
+        border: none;
+        cursor: pointer;
+      }
+
+      &-user {
+        &-search,
+        &-account,
+        &-basket {
+          width: 62px;
+          height: 62px;
+          padding: 6px;
+          border: none;
+          cursor: pointer;
+        }
+
+        &-search {
+          background: url("../../assets/images/search.svg") #FFCBB4 no-repeat center;
+        }
+
+        &-account {
+          background: url("../../assets/images/user.svg") #FAB798 no-repeat center;
+        }
+
+        &-basket {
+          background: url("../../assets/images/cart.svg") #F4A17B no-repeat center;
+        }
+      }
+    }
+  }
+}

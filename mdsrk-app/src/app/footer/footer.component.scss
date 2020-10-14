@@ -1,0 +1,83 @@
+@import '../../assets/styles/main/variables.scss';
+@import '../../assets/styles/main/colors';
+
+.mdsrk-footer {
+  max-width: $content-width-desktop;
+  width: 100%;
+  margin: 0 auto;
+
+  &-container {
+    padding-top: 42px;
+
+    &-logo {
+      background: url("../../assets/images/footer_logo.svg") no-repeat center;
+      width: 95px;
+      height: 150px;
+      margin: 0 auto 45px;
+
+    }
+
+    &-nav {
+      margin-bottom: 34px;
+      text-align: center;
+
+      &-btn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $whiteColor;
+        background: #F4A17B;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .mat-button {
+        color: $whiteColor;
+        display: inline-block;
+      }
+    }
+
+    &-icon {
+      margin-bottom: 41px;
+      text-align: center;
+
+      &-instagram {
+        background: url("../../assets/images/footerInsta.svg") no-repeat center;
+        height: 19px;
+        width: 19px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    &-line {
+      margin-bottom: 32px;
+      background: url("../../assets/images/Line 1.svg") no-repeat center;
+      border: 1px solid $whiteColor;
+      width: 100%;
+    }
+
+    &-info {
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+
+      &-company {
+        min-width: 135px;
+        color: $whiteColor;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      &-rating {
+        min-width: 135px;
+        color: $whiteColor;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+      }
+    }
+  }
+}

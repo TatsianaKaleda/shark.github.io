@@ -1,0 +1,164 @@
+@import '../../assets/styles/main/variables.scss';
+@import '../../assets/styles/main/colors';
+
+@media screen and (max-width: 1200px) {
+  .mdsrk-footer {
+
+    &-container {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &-info {
+        &-company,
+        &-rating {
+          line-height: 20px;
+        }
+
+        &-company {
+          max-width: 319px;
+          margin-right: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mdsrk-footer {
+
+    &-container {
+
+      &-info {
+        &-company {
+          font-weight: normal;
+        }
+
+        &-rating {
+          font-weight: normal;
+        }
+      }
+
+      &-line {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mdsrk-footer {
+
+    &-container {
+
+      &-nav{
+
+        .mat-button {
+          display: block;
+          margin: 0 auto 10px;
+        }
+      }
+
+      &-icon {
+        margin-bottom: 80px;
+      }
+
+      &-info {
+        &-rating {
+          max-width: 329px;
+        }
+        &-company {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mdsrk-footer {
+
+    &-container {
+        padding-top: 30px;
+
+      &-logo {
+        margin: 0 auto 31px;
+        background-size: 98% auto;
+        width: 51px;
+        height: 82px;
+      }
+
+      &-nav {
+        &-btn {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+
+      &-icon {
+        margin-bottom: 30px;
+      }
+
+      &-info {
+
+        &-rating {
+          max-width: 250px;
+          font-size: 12px;
+        }
+        &-company {
+          margin-right: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mdsrk-footer {
+
+    &-container {
+      padding-top: 20px;
+
+      &-info {
+        padding-bottom: 15px;
+
+        &-rating {
+          max-width: 125px;
+          font-size: 10px;
+          line-height: 15px;
+        }
+
+        &-company {
+          max-width: 125px;
+          margin-right: 40px;
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+
+//@media screen and (max-width: 400px) {
+//  .mdsrk-footer {
+//
+//    &-container {
+//      padding-top: 20px;
+//
+//      &-info {
+//        padding-bottom: 15px;
+//
+//        &-company {
+//          font-size: 8px;
+//          line-height: 15px;
+//        }
+//
+//        &-rating {
+//          font-size: 8px;
+//          line-height: 15px;
+//        }
+//      }
+//    }
+//  }
+//}
+

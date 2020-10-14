@@ -1,0 +1,105 @@
+@import '../../../../assets/styles/main/variables';
+@import '../../../../assets/styles/main/colors';
+
+@media screen and (max-width: 1200px) {
+  .mdsrk-navbar {
+    &-container {
+      padding-left: 15px;
+
+      &-nav-item {
+        padding: 0 8px;
+
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mdsrk-navbar {
+    &-container {
+      &-nav {
+        display: none;
+      }
+
+      &-mobile {
+        display: block;
+      }
+    }
+
+    &-mobile {
+      position: fixed;
+      width: 100%;
+      height: calc(100% - 127px);
+      top: 127px;
+      background: rgba(41, 41, 41, 0.45);
+      backdrop-filter: blur(10px);
+      z-index: 1;
+
+      &-menu {
+        float: right;
+        max-width: 238px;
+        width: 238px;
+        margin: 3px;
+        background: $whiteColor;
+        border-radius: 5px;
+
+        & .mat-expansion-panel {
+          box-shadow: none;
+
+          & .mat-menu-item {
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: 1px solid $borderColor;
+            width: calc(100% - 52px);
+            padding: 0;
+          }
+        }
+
+        & .mat-button,
+        & .mat-expansion-panel-header-title {
+          justify-content: center;
+          width: 100%;
+          text-align: center;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+        }
+
+        & .mat-button {
+          padding: 18px;
+        }
+
+        & hr {
+          margin: 0 auto;
+          width: calc(100% - 36px);
+          background: $borderColor;
+          height: 1px;
+          border: none;
+        }
+
+        & .mat-expansion-panel-header {
+          border: none;
+          padding: 18px;
+          height: auto;
+
+          &-title {
+            margin: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .mdsrk-navbar-mobile {
+    height: calc(100% - 116px);
+    top: 116px;
+  }
+}
+

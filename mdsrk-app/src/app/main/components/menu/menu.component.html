@@ -1,0 +1,32 @@
+<section class="mdsrk-menu">
+  <h2 class="mdsrk-menu-title">
+    меню
+  </h2>
+
+  <p class="mdsrk-menu-subtitle">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean euismod bibendum laoreet.
+  </p>
+
+  <div class="mdsrk-menu-category">
+    <button mat-button
+            *ngFor="let category of menuCategory"
+            [class._active]="category.active"
+            class="mdsrk-menu-category-item">
+      {{category.name}}
+    </button>
+  </div>
+
+  <ngx-slick-carousel class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <slide
+        [slide]="slide">
+      </slide>
+    </div>
+  </ngx-slick-carousel>
+</section>
+
+<div class="mdsrk-menu-wave">
+</div>

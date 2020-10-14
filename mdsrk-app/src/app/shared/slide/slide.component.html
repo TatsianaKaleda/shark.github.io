@@ -1,0 +1,71 @@
+<!--{{slide.name}}-->
+<div class="slide-position">
+  <div class="slide-img"
+       [style.backgroundImage]="'url(../../../assets/images/'+ slide.image +')'">
+  </div>
+
+  <div class="slide-labels"
+       *ngIf="slide.labels">
+    <div class="slide-labels-item"
+         *ngFor="let label of slide.labels"
+         [style.backgroundColor]="label.color">
+      {{label.name}}
+    </div>
+  </div>
+
+  <div class="slide-content">
+    <p class="slide-categories"
+    *ngIf="slide.category">
+      <span class="slide-categories-item"
+      *ngFor="let category of slide.category; let i = index">
+        {{category}} {{slide.category.length - 1 !== i ? ', ' : ''}}
+      </span>
+    </p>
+
+    <p class="slide-name">
+      {{slide.name}}
+    </p>
+
+    <div class="slide-details">
+      <p class="slide-details-weight">
+        {{slide.weight}}г
+      </p>
+
+      <p class="slide-details-price">
+        {{slide.price}}р
+      </p>
+    </div>
+
+    <div *ngIf="slide.isAvailable; else notAvailable"
+         class="slide-controls">
+      <div class="slide-controls-count">
+        <button mat-button
+                class="slide-controls-count-minus count-btn">
+          -
+        </button>
+
+        <p class="slide-controls-count-value">
+          {{slide.count ? slide.count : 0}}
+        </p>
+
+        <button mat-button
+                class="slide-controls-count-plus count-btn">
+          +
+        </button>
+      </div>
+
+      <button mat-button
+              class="slide-controls-add">
+        в корзину
+      </button>
+    </div>
+
+    <ng-template #notAvailable>
+      <div class="slide-controls">
+        <p class="slide-controls-not-available">
+          Только во вторник
+        </p>
+      </div>
+    </ng-template>
+  </div>
+</div>
